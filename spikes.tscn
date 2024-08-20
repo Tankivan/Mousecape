@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Dungeon Tile Set.png" type="Texture" id=1]
+[ext_resource path="res://Area2D.gd" type="Script" id=2]
+[ext_resource path="res://death.mp3" type="AudioStream" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 15.5, 3.5 )
+
+[node name="spikes" type="Area2D"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 230, 32, 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.5, 1.5 )
+shape = SubResource( 1 )
+
+[node name="death_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = 2.364
+
+[connection signal="finished" from="death_sound" to="." method="_on_death_sound_finished"]

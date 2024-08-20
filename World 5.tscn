@@ -1,0 +1,60 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://blocks.tres" type="TileSet" id=1]
+[ext_resource path="res://World 2.gd" type="Script" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://not_blocks.tres" type="TileSet" id=4]
+[ext_resource path="res://rat_painting_4.png" type="Texture" id=5]
+[ext_resource path="res://main_background.png" type="Texture" id=6]
+[ext_resource path="res://grass.tres" type="TileSet" id=7]
+[ext_resource path="res://Dungeon Tile Set.png" type="Texture" id=8]
+[ext_resource path="res://WorldComplete.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Arcane Secrets.mp3" type="AudioStream" id=10]
+
+[node name="World 5" type="Node"]
+script = ExtResource( 2 )
+
+[node name="MainBackground" type="Sprite" parent="."]
+position = Vector2( 284, 164 )
+scale = Vector2( 0.613281, 0.578125 )
+texture = ExtResource( 6 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1179648, 1, 0, 1179651, 1, 0, 1179655, 1, 0, 1179656, 1, 0, 1179660, 1, 0, 1245184, 0, 0, 1245192, 0, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 524304, 0, 0, 524305, 1, 0, 524306, 2, 0, 524315, 0, 0, 524316, 1, 0, 524317, 2, 0, 589840, 3, 0, 589841, 33, 0, 589842, 5, 0, 589851, 3, 0, 589852, 35, 0, 589853, 5, 0, 655376, 3, 0, 655377, 33, 0, 655378, 5, 0, 655387, 3, 0, 655388, 35, 0, 655389, 5, 0, 720912, 3, 0, 720913, 33, 0, 720914, 25, 0, 720915, 1, 0, 720916, 1, 0, 720917, 1, 0, 720918, 1, 0, 720919, 1, 0, 720920, 1, 0, 720921, 1, 0, 720922, 1, 0, 720923, 26, 0, 720924, 35, 0, 720925, 5, 0, 786448, 3, 0, 786449, 33, 0, 786450, 36, 0, 786451, 41, 0, 786453, 28, 0, 786454, 28, 0, 786455, 28, 0, 786456, 28, 0, 786457, 41, 0, 786459, 37, 0, 786460, 35, 0, 786461, 5, 0, 851984, 3, 0, 851985, 33, 0, 851986, 36, 0, 851989, 29, 0, 851990, 29, 0, 851991, 29, 0, 851992, 29, 0, 851995, 37, 0, 851996, 35, 0, 851997, 5, 0, 917520, 3, 0, 917521, 33, 0, 917522, 36, 0, 917523, 31, 0, 917524, 31, 0, 917525, 31, 0, 917526, 31, 0, 917527, 31, 0, 917528, 31, 0, 917529, 31, 0, 917530, 31, 0, 917531, 37, 0, 917532, 35, 0, 917533, 5, 0, 983056, 3, 0, 983057, 33, 0, 983058, 36, 0, 983059, 29, 0, 983060, 29, 0, 983061, 29, 0, 983062, 29, 0, 983063, 29, 0, 983064, 29, 0, 983065, 29, 0, 983066, 29, 0, 983067, 37, 0, 983068, 35, 0, 983069, 5, 0, 1048592, 3, 0, 1048593, 33, 0, 1048594, 36, 0, 1048595, 31, 0, 1048596, 31, 0, 1048597, 31, 0, 1048598, 31, 0, 1048599, 31, 0, 1048600, 31, 0, 1048601, 31, 0, 1048602, 31, 0, 1048603, 37, 0, 1048604, 35, 0, 1048605, 5, 0, 1114128, 24, 0, 1114129, 33, 0, 1114130, 36, 0, 1114131, 29, 0, 1114132, 29, 0, 1114133, 29, 0, 1114134, 29, 0, 1114135, 29, 0, 1114136, 29, 0, 1114137, 29, 0, 1114138, 29, 0, 1114139, 37, 0, 1114140, 35, 0, 1114141, 5, 0, 1179664, 24, 0, 1179665, 33, 0, 1179666, 36, 0, 1179667, 31, 0, 1179668, 31, 0, 1179669, 31, 0, 1179670, 31, 0, 1179671, 31, 0, 1179672, 31, 0, 1179673, 31, 0, 1179674, 31, 0, 1179675, 37, 0, 1179676, 35, 0, 1179677, 5, 0, 1245200, 1, 0, 1245201, 1, 0, 1245202, 1, 0, 1245203, 1, 0, 1245204, 1, 0, 1245205, 1, 0, 1245206, 1, 0, 1245207, 1, 0, 1245208, 1, 0, 1245209, 26, 0, 1245210, 31, 0, 1245211, 25, 0, 1245212, 1, 0, 1245213, 1, 0 )
+
+[node name="TileMap3" type="TileMap" parent="."]
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 1, 1 )
+format = 1
+tile_data = PoolIntArray( 19857808, 0, 0 )
+
+[node name="RatPainting4" type="Sprite" parent="."]
+position = Vector2( 368, 236 )
+texture = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 264, 288 )
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 208, 160, 16, 32 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 425, 294 )
+
+[node name="WorldComplete" parent="." instance=ExtResource( 9 )]
+position = Vector2( -11, 223 )
+scale = Vector2( 1, 5 )
+world_scene = "res://end.tscn"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -26.776

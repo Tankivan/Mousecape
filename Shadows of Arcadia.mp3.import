@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Shadows of Arcadia.mp3-245e455bcb1602ef82da642792aff6d5.mp3str"
+
+[deps]
+
+source_file="res://Shadows of Arcadia.mp3"
+dest_files=[ "res://.import/Shadows of Arcadia.mp3-245e455bcb1602ef82da642792aff6d5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
